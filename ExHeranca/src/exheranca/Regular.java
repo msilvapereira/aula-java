@@ -36,10 +36,8 @@ public class Regular extends Aluno {
     
     @Override
     public void print() {
-        System.out.println("Nome: " + this.getNome()
-        + "\nRG: " + this.getRG()
-        + "\nRA: " + this.getRA()
-        + "\nNota 1: " + this.getProva1()
+        super.print();
+        System.out.println("Nota 1: " + this.getProva1()
         + "\nNota 2: " + this.getProva2()
         + "\nMedia: " + media());
     }

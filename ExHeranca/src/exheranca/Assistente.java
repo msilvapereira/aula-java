@@ -26,10 +26,8 @@ public class Assistente extends Aluno {
     
     @Override
     public void print(){
-        System.out.println("Nome: " + this.getNome()
-        + "\nRG: " + this.getRG()
-        + "\nRA: " + this.getRA()
-      + "\nFaltas: " + this.getFaltas()
+        super.print();
+        System.out.println("Faltas: " + this.getFaltas()
         + "\nFrequencia: " + frequencia() + "%");
     }
 }

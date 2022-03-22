@@ -20,9 +20,9 @@ public class Aluno extends Pessoa{
         this.RA = RA;
     }
     
+    @Override
     public void print(){
-        System.out.println("Nome: " + this.getNome()
-        + "\nRG: " + this.getRG()
-        + "\nRA: " + this.getRA());
+        super.print();
+        System.out.println("RA: " + this.getRA());
     }
 }

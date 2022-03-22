@@ -27,4 +27,11 @@ public class Pessoa {
     public void setRG(String RG) {
         this.RG = RG;
     }
+    
+    public void print(){
+        System.out.println("\n"
+        +   "Nome: " + this.nome
+        +   "\nRG: " + this.RG
+        );
+    }
 }
