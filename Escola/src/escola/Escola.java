@@ -1,25 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package escola;
-
 /**
  *
  * @author 0040962113014
  */
 public class Escola {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        Aluno aluno = new Aluno("Maria");
-        aluno.faltou();
-        aluno.faltou();
-        aluno.prova1(10);
-        aluno.prova2(5);
-        aluno.resultado();
+        Pessoa p1 = new Pessoa("João Ulisses", "57.421.368-9");
+        p1.imprimir();
+        Aluno a1 = new Aluno("105.504.580-6", "Noturno", "Maria Eduarda", "78.698.658-8" );
+        a1.trancar();
+        a1.imprimir();
+        a1.destrancar();
+        a1.imprimir();
+        a1.desistir();
+        a1.imprimir();
+        Professor prof1 = new Professor("Exatas", 35, 8, "Fabricio", "21.635.953-7");
+        prof1.imprimir();
+        
     }
-    
 }
